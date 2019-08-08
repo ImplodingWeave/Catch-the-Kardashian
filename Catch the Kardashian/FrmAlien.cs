@@ -26,7 +26,7 @@ namespace Catch_the_Kardashian
         {
             MessageBox.Show("Try and click on the Kardashian as fast as you can with the mouse. This will increase your score. Attempt to get 80 in 20 seconds. You must clikc start for it to start. ", "Game Instructions");
           hi
-
+hi
         }
 
         private void PnlGame_Paint(object sender, PaintEventArgs e)
