@@ -96,7 +96,7 @@ namespace Catch_the_Kardashian
                 LblScore.Enabled = false;
                 LblTime.Enabled = false;
                 MessageBox.Show("Game Over!");
-                When
+               
             }
         }
 
