@@ -40,6 +40,8 @@
             this.TmrCountdown = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.LblTime = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtName = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,12 +139,33 @@
             this.LblTime.Size = new System.Drawing.Size(60, 30);
             this.LblTime.TabIndex = 6;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(115, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 18);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Name";
+            // 
+            // TxtName
+            // 
+            this.TxtName.Location = new System.Drawing.Point(93, 134);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(100, 20);
+            this.TxtName.TabIndex = 8;
+            this.TxtName.TextChanged += new System.EventHandler(this.TxtName_TextChanged);
+            // 
             // FrmAlien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.TxtName);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.LblTime);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LblScore);
@@ -175,6 +198,8 @@
         private System.Windows.Forms.Timer TmrCountdown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblTime;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox TxtName;
     }
 }
 
