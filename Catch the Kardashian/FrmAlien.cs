@@ -24,7 +24,7 @@ namespace Catch_the_Kardashian
 
         private void FrmAlien_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Try and click on the Kardashian as fast as you can with the mouse. This will increase your score. Attempt to get 100 in 40 seconds. You must clikc start for it to start. ", "Game Instructions");
+            MessageBox.Show("Try and click on the Kardashian as fast as you can with the mouse. This will increase your score. Attempt to get 100 in 35 seconds. You must clikc start for it to start. ", "Game Instructions");
             TxtName.Focus();
             MnuStart.Enabled = false;
             TmrCountdown.Enabled = false;
@@ -78,22 +78,22 @@ namespace Catch_the_Kardashian
             }
             if (score == 40)
             {
-                TmrAlien.Interval -= 80;
+                TmrAlien.Interval -= 60;
                 label6.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 60)
             {
-                TmrAlien.Interval -= 60;
+                TmrAlien.Interval -= 40;
                 label7.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 80)
             {
-                TmrAlien.Interval -= 40;
+                TmrAlien.Interval -= 10;
                 label8.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 100)
             {
-                TmrAlien.Interval -= 10;
+                TmrAlien.Interval -= 5;
                 label9.ForeColor = System.Drawing.Color.Green;
             }
         }
