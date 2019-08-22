@@ -73,27 +73,27 @@ namespace Catch_the_Kardashian
             }
             if (score == 20)
             {
-               TmrAlien.Interval -= 100;
+               TmrAlien.Interval -= 80;
                label5.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 40)
             {
-                TmrAlien.Interval -= 60;
+                TmrAlien.Interval -= 40;
                 label6.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 60)
             {
-                TmrAlien.Interval -= 40;
+                TmrAlien.Interval -= 20;
                 label7.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 80)
             {
-                TmrAlien.Interval -= 10;
+                TmrAlien.Interval -= 5;
                 label8.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 100)
             {
-                TmrAlien.Interval -= 5;
+                TmrAlien.Interval -= 1;
                 label9.ForeColor = System.Drawing.Color.Green;
             }
         }
