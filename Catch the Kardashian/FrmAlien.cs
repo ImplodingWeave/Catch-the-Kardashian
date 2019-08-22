@@ -16,7 +16,7 @@ namespace Catch_the_Kardashian
         Image alien = Image.FromFile(Application.StartupPath + @"\Kim.png");
         Graphics g;
         int score;
-        int count = 21;
+        int count = 45;
         public FrmAlien()
         {
             InitializeComponent();
@@ -71,7 +71,31 @@ namespace Catch_the_Kardashian
                 score++;//add 1 to the score
                 LblScore.Text = score.ToString();// display the score
             }
-
+            if (score == 20)
+            {
+               TmrAlien.Interval -= 100;
+               label5.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 40)
+            {
+                TmrAlien.Interval -= 80;
+                label6.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 60)
+            {
+                TmrAlien.Interval -= 60;
+                label7.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 80)
+            {
+                TmrAlien.Interval -= 40;
+                label8.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 100)
+            {
+                TmrAlien.Interval -= 10;
+                label9.ForeColor = System.Drawing.Color.Green;
+            }
         }
 
         private void MnuStart_Click(object sender, EventArgs e)
