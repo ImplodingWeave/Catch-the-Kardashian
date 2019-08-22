@@ -16,7 +16,7 @@ namespace Catch_the_Kardashian
         Image alien = Image.FromFile(Application.StartupPath + @"\Kim.png");
         Graphics g;
         int score;
-        int count = 45;
+        int count = 35;
         public FrmAlien()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace Catch_the_Kardashian
 
         private void FrmAlien_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Try and click on the Kardashian as fast as you can with the mouse. This will increase your score. Attempt to get 80 in 20 seconds. You must clikc start for it to start. ", "Game Instructions");
+            MessageBox.Show("Try and click on the Kardashian as fast as you can with the mouse. This will increase your score. Attempt to get 100 in 40 seconds. You must clikc start for it to start. ", "Game Instructions");
             TxtName.Focus();
             MnuStart.Enabled = false;
             TmrCountdown.Enabled = false;
@@ -159,4 +159,3 @@ namespace Catch_the_Kardashian
 }
 
 
-fgfgfgfgf
